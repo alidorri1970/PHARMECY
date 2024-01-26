@@ -1,4 +1,7 @@
+import { useState } from "react";
+import Header from "./header";
 export function Product(props) {
+  var [count, setCount] = useState(0);
   return (
     <>
       <div className="container">
@@ -18,11 +21,18 @@ export function Product(props) {
           src="https://storage3.torob.com/backend-api/internet_shop/logos/13dea769fd4c.png"
           alt=""
         />
-        <h3 className="seller-product">Ekala</h3>
+        <h3 className="seller-product">Ekala{ifCluse(count)}</h3>
         <h2 className="price-product">2120000</h2>
-        <button className="increasement">+</button>
-        <button className="decreasement">-</button>
+        <button onClick={()=> setCount (count + 1)} className="increasement">+</button>
+        <button onClick={()=> setCount (count - 1)} className="decreasement">-</button>
       </div>
     </>
   );
+  function ifCluse(count){
+    if(count < 0){
+      return "=>empty List";
+    }else{
+      return count;
+    }
+  }
 }

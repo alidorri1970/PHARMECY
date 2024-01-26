@@ -1,7 +1,7 @@
 import { Product } from "./product";
 import "./style.css";
 
-function Header() {
+function Header(props) {
   return (
     <>
       <section className="header">
@@ -20,7 +20,7 @@ function Header() {
               <li>Store</li>
               <li>About</li>
               <li>
-                <span>in order(_)</span>
+                <span>in order({props.count})</span>
                 <span><img src="https://icon-icons.com/downloadimage.php?id=181878&root=2869/PNG/32/&file=order_confirmation_icon_181878.png" alt="" /></span>
               </li>
             </ul>
