@@ -1,0 +1,40 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    font-family: "Josefin Sans", serif;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background: linear-gradient(to right, 
+    white, 
+    #f0fae6,  
+    #d9f2c2,  
+    #bfe79c,  
+    #a5d97a,  
+    #89c95c,  
+    #73b944,  
+    #609c1d);
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  td:nth-child(5) {
+    overflow:hidden;
+    width: 400px;
+  }
+
+  td > img {
+    width: 50px;
+    height: 50px;
+  }
+

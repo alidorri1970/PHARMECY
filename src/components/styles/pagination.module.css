@@ -1,0 +1,21 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.pageLink {
+  font-family: "Josefin Sans", serif;
+  border: none;
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center; /* Ensure text alignment */
+  transition: all 0.4s ease-in-out;
+}
+
+.pageLink:hover {
+    box-shadow: 1px 1px 1px gray;
+    border-radius: 10px;
+}

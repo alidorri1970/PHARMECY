@@ -1,0 +1,105 @@
+.box {
+    box-shadow: 0px -1px 0px gray;
+    height: 300px;
+    margin-top: 100px;
+}
+
+.address {
+    text-align: center;
+    font-family: "Josefin Sans", serif;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+
+}
+
+.contactList {
+  border: 1px solid white; 
+  
+}
+.contactList > h6 {
+    font-size: 15px;
+    font-family: "Josefin Sans", serif;
+    text-align: center;
+} 
+
+.contactList > li {
+    background-color: gray;
+    border-radius: 40px;
+    padding: 10px;
+    margin: 5px;
+    
+}
+
+.contactList > li:hover {
+    background-color: #609C1D;
+    cursor: pointer;
+}
+
+.contactList > li > img {
+    width: 30px;
+    height: 30px;
+}
+
+.contactList > h6::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"%3E%3Cpath d="M0 0h48v48H0z" fill="none"/%3E%3Cpath d="M13.25 21.59c2.88 5.66 7.51 10.29 13.18 13.17l4.4-4.41c.55-.55 1.34-.71 2.03-.49C35.1 30.6 37.51 31 40 31c1.11 0 2 .89 2 2v7c0 1.11-.89 2-2 2C21.22 42 6 26.78 6 8c0-1.11.9-2 2-2h7c1.11 0 2 .89 2 2 0 2.49.4 4.9 1.14 7.14.22.69.06 1.48-.49 2.03l-4.4 4.42z"/%3E%3C/svg%3E');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.hiring > h6{
+    font-size: 15px;
+    font-family: "Josefin Sans", serif;
+    text-align: center;
+}
+.hiring > h6::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"%3E%3Cpath d="M0 0h48v48H0z" fill="none"/%3E%3Cpath d="M13.25 21.59c2.88 5.66 7.51 10.29 13.18 13.17l4.4-4.41c.55-.55 1.34-.71 2.03-.49C35.1 30.6 37.51 31 40 31c1.11 0 2 .89 2 2v7c0 1.11-.89 2-2 2C21.22 42 6 26.78 6 8c0-1.11.9-2 2-2h7c1.11 0 2 .89 2 2 0 2.49.4 4.9 1.14 7.14.22.69.06 1.48-.49 2.03l-4.4 4.42z"/%3E%3C/svg%3E');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.002 512.002" xml:space="preserve" width="64px" height="64px" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#d1d1d1;" d="M219.217,207.04h47.611c31.011,0,56.152,25.139,56.152,56.152v82.999H149.117v-82.999 c0-31.011,25.139-56.152,56.152-56.152h47.611"></path> <g> <path style="fill:#609c1d;" d="M298.245,198.999c6.543-9.139,10.412-20.318,10.412-32.391v-38.011 c0-8.469-6.867-15.334-15.334-15.334s-15.334,6.865-15.334,15.334v38.011c0,13.775-11.153,24.986-24.902,25.098H219.01 c-13.749-0.113-24.902-11.323-24.902-25.098v-38.011c0-13.844,11.263-25.109,25.109-25.109h33.664 c8.468,0,15.334-6.865,15.334-15.334s-6.867-15.334-15.334-15.334h-33.664c-30.756,0-55.778,25.021-55.778,55.778v38.011 c0,12.073,3.867,23.252,10.412,32.391c-23.707,11.65-40.067,36.044-40.067,64.193v82.999c0,8.469,6.865,15.335,15.334,15.335 h173.862c8.468,0,15.335-6.865,15.335-15.335v-82.999C338.314,235.041,321.953,210.649,298.245,198.999z M307.645,330.857H164.451 v-67.665c0-22.506,18.309-40.817,40.817-40.817h13.534c0.138,0.002,0.274,0.011,0.413,0.011h1.498v62.744 c0,8.469,6.865,15.335,15.334,15.335c8.469,0,15.334-6.865,15.334-15.335v-62.744h1.497c0.138,0,0.274-0.009,0.412-0.011h13.534 c22.508,0,40.817,18.309,40.817,40.817v67.665H307.645z"></path> <path style="fill:#609c1d;" d="M234.702,469.4c-60.13,0-120.259-22.888-166.034-68.663c-91.551-91.551-91.551-240.518,0-332.07 s240.518-91.551,332.07,0c5.988,5.988,5.988,15.698,0,21.686c-5.99,5.988-15.696,5.988-21.688,0 c-38.557-38.557-89.82-59.791-144.348-59.791S128.909,51.797,90.353,90.353c-79.594,79.594-79.594,209.103,0,288.698 c38.557,38.557,89.82,59.791,144.348,59.791s105.791-21.234,144.348-59.791c5.99-5.988,15.696-5.988,21.688,0 c5.988,5.988,5.988,15.698,0,21.686C354.961,446.513,294.831,469.4,234.702,469.4z"></path> <path style="fill:#609c1d;" d="M75.405,242.702c-0.238,0-0.474-0.005-0.713-0.015c-8.46-0.386-15.005-7.56-14.618-16.02 c1.997-43.625,20.114-84.669,51.016-115.573c5.988-5.988,15.698-5.99,21.686,0c5.988,5.99,5.99,15.698,0,21.686 c-25.481,25.483-40.42,59.323-42.066,95.29C90.337,236.289,83.551,242.702,75.405,242.702z"></path> </g> <rect x="427.216" y="415.499" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1092.5405 452.5643)" style="fill:#d1d1d1;" width="50.649" height="74.111"></rect> <path style="fill:#609c1d;" d="M507.511,450.006l-52.409-52.409c-5.99-5.987-15.696-5.987-21.688,0l-7.066,7.066l-25.613-25.615 c-2.995-2.995-6.919-4.491-10.843-4.491c-0.071,0-0.141,0.009-0.213,0.011c-0.419,0.006-0.839,0.02-1.256,0.06 c-2.71,0.259-5.355,1.254-7.643,2.952c-0.601,0.446-1.187,0.923-1.731,1.469c-0.002,0.002-0.003,0.005-0.006,0.006 c-79.594,79.589-209.099,79.584-288.69-0.006c-79.594-79.594-79.594-209.103,0-288.698c79.592-79.592,209.101-79.594,288.696,0 c57.464,57.464,75.387,143.477,45.66,219.128c-3.098,7.882,0.782,16.784,8.664,19.88c7.885,3.099,16.784-0.782,19.881-8.664 c34.188-87.009,13.574-185.938-52.519-252.031c-91.551-91.551-240.518-91.551-332.07,0s-91.551,240.518,0,332.07 c45.776,45.776,105.905,68.663,166.034,68.663c55.344,0,110.677-19.406,154.828-58.184l15.134,15.135l-7.066,7.066 c-5.988,5.988-5.988,15.698,0,21.688l52.409,52.409c2.877,2.875,6.776,4.491,10.843,4.491c4.067,0,7.966-1.616,10.843-4.491 l35.818-35.818c2.875-2.875,4.491-6.776,4.491-10.843C512,456.782,510.386,452.881,507.511,450.006z M460.848,474.983 l-30.721-30.723l14.132-14.132l30.721,30.723L460.848,474.983z"></path> </g></svg>
+    hiring logo 
+
+    <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#609c1d"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Warning / Info"> <path id="Vector" d="M12 11V16M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21ZM12.0498 8V8.1L11.9502 8.1002V8H12.0498Z" stroke="#00000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+    info logo
+
+    <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#609c1d"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 16.5H6" stroke="#609c1d" stroke-width="1.5" stroke-linecap="round"></path> <path d="M8 13.5H6" stroke="#609c1d" stroke-width="1.5" stroke-linecap="round"></path> <path d="M14 15C14 14.0572 14 13.5858 14.2929 13.2929C14.5858 13 15.0572 13 16 13C16.9428 13 17.4142 13 17.7071 13.2929C18 13.5858 18 14.0572 18 15C18 15.9428 18 16.4142 17.7071 16.7071C17.4142 17 16.9428 17 16 17C15.0572 17 14.5858 17 14.2929 16.7071C14 16.4142 14 15.9428 14 15Z" stroke="#609c1d" stroke-width="1.5"></path> <path d="M22 12C22 8.22876 22 6.34315 20.8284 5.17157C19.6569 4 17.7712 4 14 4H10C6.22876 4 4.34315 4 3.17157 5.17157C2 6.34315 2 8.22876 2 12C2 15.7712 2 17.6569 3.17157 18.8284C4.34315 20 6.22876 20 10 20H14C17.7712 20 19.6569 20 20.8284 18.8284C21.4816 18.1752 21.7706 17.3001 21.8985 16" stroke="#609c1d" stroke-width="1.5" stroke-linecap="round"></path> <path d="M2 10L7 10M22 10L11 10" stroke="#609c1d" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+    card logo
+*/
+
+.hiringLink {
+    all: unset;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: block;
+}
+
+.copyrite {
+    background-color: #609C1D;
+    padding:10px;
+    height: 50px;
+    color: white;
+    font-family: "Josefin Sans", serif;
+    font-size: 17px;
+    text-align: center;
+    
+}
+
+.copyrite:first-child {
+color: red;}

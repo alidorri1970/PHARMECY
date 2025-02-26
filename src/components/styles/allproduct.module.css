@@ -1,0 +1,76 @@
+.banner {
+  margin: 10px auto;
+}
+
+.bannerimage {
+  width: 100%;
+}
+
+.sortingitems {
+  background-color: rgba(128, 128, 128, 0.146);
+  font-family: "Josefin Sans", serif;
+  width: 85%;
+  height: 80px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sortingitems > ul > form > li {
+  margin: 0 10px;
+}
+
+.selectorbox {
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  cursor: pointer;
+  height: 25px;
+  margin-right: 20px;
+}
+
+.search {
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+.listIcon {
+  margin: 0 20px 0 20px;
+}
+
+.listIcon,
+.tableIcon {
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+}
+
+.listIcon:hover,
+.tableIcon:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgb(152, 152, 152);
+}
+
+.items {
+  max-width: 85%;
+  margin: 20px auto;
+  display: grid;
+  column-gap: 50px;
+  row-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.flexitems {
+  max-width: 85%;
+  margin: 20px auto;
+  display: grid;
+  column-gap: 50px;
+  row-gap: 50px;
+  grid-template-columns: repeat(1, 200px);
+}
