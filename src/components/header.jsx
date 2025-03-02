@@ -49,7 +49,7 @@ function Header(props) {
       setCurrentMessage(messages[index]);
     }, 2000);
 
-    return () => clearInterval(interval); // پاک کردن تایمر هنگام تغییر کامپوننت
+    return () => clearInterval(interval)
   }, [index]);
 
   const [isOpen, setIsOpen] = useState(false);

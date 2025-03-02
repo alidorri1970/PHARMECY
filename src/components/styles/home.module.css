@@ -1,0 +1,6 @@
+.shownItem {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    height: auto;
+    background-color: rgba(227, 227, 227, 0.132);
+}

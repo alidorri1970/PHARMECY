@@ -1,0 +1,98 @@
+* {font-family: "Josefin Sans", serif;}
+
+.box {
+    width: 700px;
+    height: 300px;
+    border: 2px solid #609C1D;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px rgba(128, 128, 128, 0.269);
+    background-color: rgba(194, 194, 194, 0.208);
+    margin: 20px 0;
+}
+
+.pictur {
+    width: 200px;
+    height: 200px;
+    border:2px solid #609C1D;
+    border-radius: 30px;
+}
+
+.thumbnail {
+    width: 44px; 
+    height: 44px; 
+    border-radius: 6px; 
+    margin: 0 3px;
+}
+
+.slickDots .slickthumb {
+    display: flex;
+    justify-content: right;
+    gap: 8px; 
+    margin-top: 10px;
+    list-style: none;
+    align-items: center;
+}
+  
+  .slickDots .slickthumb li {
+    width: 60px;  
+    height: 60px;
+    cursor: pointer;
+  }
+
+  .slidercontainer {
+    width: 200px; 
+    overflow: hidden; 
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  .shit {
+    width: 300px;
+    border-radius: 30px;
+  }
+
+.title {
+    position: relative;
+    left: 220px;
+    top: -210px;
+    width: 300px;
+    overflow: auto;
+}
+
+.rates {
+    position: relative;
+    top: -200px;
+    left: 220px;
+}
+
+.description {
+    width: 470px;
+    height: 130px;
+    position: relative;
+    top: -170px;
+    left:220px;
+    overflow: auto;
+}
+
+.button {
+    background-color: #609C1D;
+    position: relative;
+    top: -420px;
+    left: 570px;
+    padding: 10px;
+    border: 1px solid#609C1D;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 30%;
+}
+
+.price {
+    position: relative;
+    font: bolder;
+    font-size: 15px;
+    left: 590px;
+    top: -400px;
+}

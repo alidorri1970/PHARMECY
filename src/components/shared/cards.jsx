@@ -9,8 +9,8 @@ import { shopContext } from "../context/shopcontext";
 
 export function Cards(props) {
 
-    const {cardItem, AddToCard} =useContext(shopContext);
-  
+  const { cardItem, AddToCard } = useContext(shopContext);
+
   return (
     <>
       <div className={styles.box} key={props.id}>
@@ -20,10 +20,10 @@ export function Cards(props) {
           alt="notFound"
         />
         <span>{"⭐".repeat(Math.round(props.rates.rate))}</span>
-        <h3 className={styles.title}>{props.title}</h3>
+        <h3 className={styles.title}>{props.title.toUpperCase()}</h3>
         <button onClick={() => AddToCard(props.id)} className={styles.button}>
           + Add to Cart
-        </button>6
+        </button>
         <h6 className={styles.price}>{props.price} USD</h6>
       </div>
     </>

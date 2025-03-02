@@ -1,4 +1,3 @@
-import { Banner, Style } from "./banner";
 import { Layout } from "./components/Layout";
 
 import {ShopContextProvider} from "./components/context/shopcontext"
