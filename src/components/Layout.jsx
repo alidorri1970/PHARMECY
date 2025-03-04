@@ -6,6 +6,7 @@ import { Home } from './Home';
 import { AllProducts } from './AllProducts';
 import { Contactus } from './contactus';
 import { Inorder } from './inorder';
+import LoginSignUp from './login';
 
 
 export const Layout = () => {
@@ -19,6 +20,7 @@ export const Layout = () => {
       <Route path='/contactus' Component={Contactus} />
       <Route path="/form" Component={Form} />
       <Route path='/inorder'Component={Inorder} />
+      <Route path='register' Component={LoginSignUp}/>
     </Routes>
   </BrowserRouter>
   </>

@@ -124,7 +124,7 @@ li {
 }
 
 .accordion-button {
-  background-color: #3b82f6; /* آبی */
+  background-color: #3b82f6; 
   color: white;
   padding: 12px;
   border: none;
@@ -178,6 +178,8 @@ li {
   font-weight: normal;
   font-size: larger;
   font-family: "Josefin Sans", serif;
+  letter-spacing: 5px;
+  word-spacing: 5px;
 }
 
 

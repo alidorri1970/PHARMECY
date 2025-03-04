@@ -1,6 +1,39 @@
 .shownItem {
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 70% 30%;
     height: auto;
-    background-color: rgba(227, 227, 227, 0.132);
+    background-color: rgba(157, 157, 157, 0.637);
 }
+
+.unvisible {
+    display: none;
+
+}
+
+.mainimage >img:nth-child(1) {
+    box-shadow: 0 12px 12px -12px rgb(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.468);
+    padding: 1px;
+    position: relative;
+    left: 50px;
+    top: 100px;
+    width: 750px;
+}
+.mainimage >img:nth-child(2){
+    box-shadow: 0 12px 12px -12px rgb(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.468);
+    padding: 1px;
+    position: relative;
+    left: 50px;
+    top: 130px;
+}
+
+.mainimage >img:nth-child(3) {
+    box-shadow: 0 12px 12px -12px rgb(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.468);
+    padding: 1px;
+    position: relative;
+    left: 100px;
+    top: 130px;
+}
+

@@ -61,10 +61,10 @@ function Header(props) {
         <div className={clsx(styles.banner, styles.container)}>
           <nav className={styles.navRight}>
             <ul>
-              <Link to="/sign-in" className={styles.signin}>
+              <Link to="/register" className={styles.signin}>
                 <li>SIGN-IN</li>
               </Link>
-              <Link to="/Login" className={styles.login}>
+              <Link to="/register" className={styles.login}>
                 <li>LOGIN</li>
               </Link>
             </ul>

@@ -1,0 +1,61 @@
+*{
+    font-family: "Josefin Sans", serif;
+}
+
+.transportBox {
+    margin-top: 20px;
+    width: 350px;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 12px 12px -12px rgb(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.468);
+}
+
+.tranporttitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #609c1d;
+    border-radius: 20px 20px 0 0;
+    border:10px solid#609c1d;
+}
+
+.tranporttitle > img {
+    margin-left: 10px;
+    width:40px;
+    height: 40px;
+}
+
+.tranportimg {
+    width:100%;
+    height: 80%;
+}
+
+.votetBox {
+    margin-top: 50px;
+    width: 350px;
+    height: 270px;
+    background-color: rgba(255, 255, 255, 0.555);
+    box-shadow: 0 12px 12px -12px rgb(0, 0, 0);
+    box-shadow: 0 12px 12px -12px rgb(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.468);
+    border-radius: 20px 20px 0 0;
+}
+
+.votinglable {
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.submitvote {
+    padding: 5px;
+    margin: 30px 0 0 20px;
+    width:100px;
+    background-color: #609c1d;
+    font-size: larger;
+    letter-spacing: 3px;
+    border: none;
+    color: white;
+    border-radius: 15px;
+}
