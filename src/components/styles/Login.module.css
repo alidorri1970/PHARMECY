@@ -7,8 +7,8 @@
   width: 500px;
   height: 570px;
   background-color: rgba(135, 135, 135, 0.144);
-  margin-left: 100px;
-  margin-top: 50px;
+ margin: 0 auto;
+  margin-top: 70px;
 }
 
 .container {

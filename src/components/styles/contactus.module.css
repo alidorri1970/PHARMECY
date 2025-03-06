@@ -1,46 +1,182 @@
 .contacmainbox {
-    background-color: rgba(255, 0, 0, 0.078);
-    height: 100vh;
+  height: 100vh;
 }
 
 .headcontent {
-    margin-top: 20px;
-    width: 100%;
-    height: 300px;
-    background-color: rgb(147, 147, 147);
+  margin-top: 20px;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(21, 21, 21, 0.219);
 }
 
 .hrefbutton {
-    background-color: red !important;
-   width: 100px !important;
-   height: 100px !important;
-   font-size: 20px;
+  background-color: red !important;
+  width: 50px !important;
+  height: 50px !important;
+  font-size: 20px;
 }
 
 .userefbutton {
-    min-width: 60px;
-    min-height: 60px;
-    border: 1px solid #999;
-    display: inline-block;
-    clear: both;
-    padding: 25px;
-    text-align: center;
-    border-radius: 100%;
-    box-shadow: 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-    margin: auto 20px auto 0;
+  width: 50px !important;
+  height: 50px !important;
+  border: 1px solid #999;
+  display: inline-block;
+  clear: both;
+  padding: 25px;
+  text-align: center;
+  border-radius: 100%;
+  box-shadow: 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+  margin: auto 20px auto 0;
 }
 
-.userefbutton > span >img {
-    
-    width: 30px;
-    height: 30px;
-    color:blue;
+.userefbutton > span > img {
+  width: 30px;
+  height: 30px;
+  color: blue;
 }
 
 .userefbutton > span > span {
-    font-size: smaller;
+  font-size: smaller;
 }
 
 .userefbutton > span {
-    padding: 5px;
+  padding: 5px;
+}
+
+.addresbox {
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+  margin-top: 100px;
+  padding: 40px;
+}
+
+.addresbox > div {
+  border: 1px solid #609c1d;
+  height: 400px;
+}
+
+.addresbox > div > h3 {
+  position: relative;
+  top: -22px;
+  left: 40px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid #609c1d;
+  font-weight: 600;
+}
+
+.addresbox > div > p {
+  padding: 10px 40px;
+  line-height: 30px;
+}
+
+.callBox {
+  height: 800px;
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+  margin-top: 50px;
+  padding: 40px;
+}
+
+.callBox > div {
+  border: 1px solid #609c1d;
+  height: 700px;
+}
+
+.callBox > div > h3 {
+  position: relative;
+  top: -22px;
+  left: 40px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid #609c1d;
+  font-weight: 600;
+}
+
+.callBox > div > p {
+  margin-top: 20px;
+  padding: 10px 40px;
+  line-height: 30px;
+}
+
+.emailBox {
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+  margin-top: 50px;
+  padding: 40px;
+}
+
+.emailBox > div {
+  border: 1px solid #609c1d;
+  height: 350px;
+}
+
+.emailBox > div > h3 {
+  position: relative;
+  top: -22px;
+  left: 40px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid #609c1d;
+  font-weight: 600;
+}
+
+.emailBox > div > p {
+  margin-top: 20px;
+  padding: 10px 40px;
+  line-height: 30px;
+}
+
+.commentBox {
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+  margin-top: 50px;
+  padding: 40px;
+}
+
+.commentBox > div {
+  border: 1px solid #609c1d;
+  height: 600px;
+  margin-top: 50px;
+}
+
+.commentBox > div > h3 {
+  position: relative;
+  top: -22px;
+  left: 40px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid #609c1d;
+  font-weight: 600;
+}
+
+.form {
+    padding: 10px 40px;
+    line-height: 30px;
+}
+
+.form input {
+    margin: 20px 0;
+    position: relative;
+    left: 300px;
+    top: -50px;
+    padding: 10px;
+}
+
+.form button {
+    position: relative;
+    left: 200px;
+    top: 50px;
+    padding: 10px 20px;
 }

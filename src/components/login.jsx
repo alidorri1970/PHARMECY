@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./header";
 
-import styles from "./../components/styles/LoginSignUp.module.css";
+import styles from "./../components/styles/Login.module.css";
 import { Link } from "react-router-dom";
 
 export default function LoginSignUp() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    setIsOpen(prev => !prev); 
+    return () => {
+      setIsOpen(prev => !prev); 
+    };
+  }, []);
+
   return (
     <>
+    <Header open={isOpen}/>
       <div>
         <div className={styles.box}>
           <div className={styles.container}>
@@ -34,10 +44,10 @@ export default function LoginSignUp() {
               </span>
             </form>
             <h3 className={styles.forgetpass}>
-              Forget<Link to="/forget" className={styles.forgetpasslink}> password?</Link>
+              Forget<Link to="forget" className={styles.forgetpasslink}> password?</Link>
             </h3>
             <button type="submit"className={styles.loginbutton}>Log in</button>
-            <h3 className={styles.signUp}>Dont have an account? <Link className={styles.signUplink}>Sign Up</Link></h3>
+            <h3 className={styles.signUp}>Dont have an account? <Link to="/signUp" className={styles.signUplink}>Sign Up</Link></h3>
           </div>
         </div>
       </div>

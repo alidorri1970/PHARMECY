@@ -25,15 +25,15 @@ export const Contactus = () => {
         <div className={Container.container}>
           <div className={styles.headcontent}>
             <span className={styles.hrefbutton}>
-            <a href="#footer" >
-              <img src={phone} alt="" />
-              <span>Your comments</span>
-            </a>
+              <a href="#footer">
+                <img src={phone} alt="" />
+                <span>Your comments</span>
+              </a>
             </span>
             <button className={styles.userefbutton} onClick={scrollToFooter}>
               <span>
-              <img src={massage} alt="" />
-              <span>Emails</span>
+                <img src={massage} alt="" />
+                <span>Emails</span>
               </span>
             </button>
 
@@ -43,18 +43,94 @@ export const Contactus = () => {
             </a>
 
             <button className={styles.userefbutton} onClick={scrollToFooter}>
-            <span>
-              <img src={location} alt="" />
-              <span>Postal address</span>
+              <span>
+                <img src={location} alt="" />
+                <span>Postal address</span>
               </span>
             </button>
           </div>
+          <div className={styles.addresbox} ref={footerRef}>
+            <div>
+              <h3>postal addres</h3>
+              <p>
+                Jamalzadeh Central Pharmacy : <br />
+                Tehran - North Jamalzadeh Street - 200 meters above Forough
+                Street - Before Nosrat Street - At the corner of Yazdan Shenas
+                Alley - No. 251.
+              </p>
+              <p>
+                postal number : <br />
+                14188-44553
+              </p>
+            </div>
+          </div>
+          <div className={styles.callBox} id="footer">
+            <div>
+              <h3>phone call</h3>
+              <p>
+                Pharmaceuticals and Supplements Unit: <br />
+                52862000 - 021 (Extension 1) <br />
+                <br />
+                Hygiene and Cosmetics Unit: <br />
+                52862000 - 021 (Extension 2) <br />
+                <br />
+                Orthopedics and Medical Equipment Unit: <br />
+                52862000 - 021 (Extension 3) <br />
+                <br />
+                Consultation with a Pharmacist Unit: <br />
+                52862000 - 021 (Extension 4) <br />
+                <br />
+                Website Support Unit: <br />
+                52862000 - 021 (Extension 5) <br />
+                <br />
+                Administrative Unit: <br />
+                52862000 - 021 (Extension 6) <br />
+                <br />
+                Address Information: <br />
+                52862000 - 021 (Extension 7) <br />
+              </p>
+            </div>
+          </div>
+          <div className={styles.emailBox} ref={footerRef}>
+            <div>
+              <h3>Email address</h3>
+              <p>
+                Information: <br /> info@darukade.com <br />
+                <br />
+                Sales Consultation: <br /> ads@darukade.com <br />
+                <br />
+                Support: <br /> support@darukade.com <br />
+              </p>
+            </div>
+          </div>
+          <div className={styles.commentBox} id="footer">
+            <div>
+          <h3>User Comments</h3>
+          <form className={styles.form}>
+            <lable> 
+            first name last name : <br />
+              <input type="text" placeholder="first + last name" />
+            </lable><br />
+            <lable>
+            email address : <br />
+              <input type="text" placeholder="Email" />
+            </lable>
+            <lable><br />
+            subject : <br />
+              <input type="text" placeholder="first + last name" />
+            </lable>
+            <lable><br />
+            your comment / opinion : <br />
+              <input type="text" placeholder="first + last name" />
+            </lable>
+            <button type="submit">submit</button>
+          </form>
+          </div>
+          </div>
         </div>
+        <Footer />
       </section>
-      <Footer />
-      <div id="footer" ref={footerRef}>
-        erhgtrhryrjryjryj
-      </div>
+
     </div>
   );
 };

@@ -1,0 +1,84 @@
+* {
+  font-family: "Josefin Sans", serif;
+}
+
+.header {
+  margin: 0 auto;
+  width: 1000px;
+  height: 450px;
+  background-color: rgba(165, 118, 118, 0.244);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-radius: 10px;
+  border: 2px solid #609c1d;
+}
+
+.header > div:last-child {
+  background-color: rgb(255, 0, 0);
+}
+
+.leftcontent > h3 {
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  position: relative;
+  top: 150px;
+}
+
+.leftcontent > p {
+  text-align: center;
+  position: relative;
+  top: 180px;
+}
+
+.leftcontent > button {
+  padding: 10px 20px;
+  position: relative;
+  left: 40%;
+  top: 250px;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: #609c1d;
+  transition: background-color 0.7s ease-in-out;
+}
+
+.leftcontent > button:hover {
+  background-color: rgb(232, 213, 213);
+}
+.rightcontent {
+  background-color: #609c1d;
+  height: 450px;
+padding: 0 25px;
+padding-top: 70px;
+
+}
+
+.rightcontent > input {
+    width: 200px;
+    height: 50px;
+    border: none;
+    margin:  10px 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.genderitem {
+    display: flex;
+    position: relative;
+    top: -30px;
+    left: 150px;
+    gap: 10px;
+}
+
+.gendertitle {
+    position: relative;
+    top: -30px;
+    left: 90px; 
+}
+
+.submit {
+    padding: 10px 20px;
+    position: relative;
+    top: 85px;
+    border: none;
+}

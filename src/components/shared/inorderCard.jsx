@@ -54,7 +54,7 @@ export const InorderCard = () => {
                 </td>
                 <td>${(item.price * quantity).toFixed(2)}</td>
                 <td>{item.price}</td>
-                <td>{quantity}</td>
+                <td><input type="number" placeholder={quantity}/></td>
                 <td>{item.title}</td>
                 <td>
                   <img src={item.image} alt={item.title} />

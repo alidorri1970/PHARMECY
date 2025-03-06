@@ -59,12 +59,12 @@ function Header(props) {
     <>
       <section className={styles.header}>
         <div className={clsx(styles.banner, styles.container)}>
-          <nav className={styles.navRight}>
+        <nav className={props.open ? styles.hidden:styles.navRight}>
             <ul>
-              <Link to="/register" className={styles.signin}>
+              <Link to="/signUp" className={styles.signin}>
                 <li>SIGN-IN</li>
               </Link>
-              <Link to="/register" className={styles.login}>
+              <Link to="/login" className={styles.login}>
                 <li>LOGIN</li>
               </Link>
             </ul>
