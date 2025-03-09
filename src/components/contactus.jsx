@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { useRef } from "react";
 import Header from "./header";
 import { Footer } from "./Footer";
@@ -10,9 +10,12 @@ import phone from "./../assets/phone.svg";
 import massage from "./../assets/massage.svg";
 import sms from "./../assets/sms.svg";
 import location from "./../assets/location.svg";
+import { shopContext } from "./context/shopcontext";
 
 export const Contactus = () => {
   const footerRef = useRef(null);
+
+  const { formdata, handleChange, handleSubmit } = useContext(shopContext);
 
   const scrollToFooter = () => {
     footerRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -106,22 +109,22 @@ export const Contactus = () => {
           <div className={styles.commentBox} id="footer">
             <div>
           <h3>User Comments</h3>
-          <form className={styles.form}>
+          <form className={styles.form} onSubmit={handleSubmit}>
             <lable> 
             first name last name : <br />
-              <input type="text" placeholder="first + last name" />
+              <input type="text" name="name" value={formdata.username} onChange={handleChange} placeholder="first + last name" />
             </lable><br />
             <lable>
             email address : <br />
-              <input type="text" placeholder="Email" />
+              <input type="text" name="email" value={formdata.email}  onChange={handleChange} placeholder="Email" />
             </lable>
             <lable><br />
             subject : <br />
-              <input type="text" placeholder="first + last name" />
+              <input type="text" name="subject" value={formdata.subject} onChange={handleChange} placeholder="subject" />
             </lable>
             <lable><br />
             your comment / opinion : <br />
-              <input type="text" placeholder="first + last name" />
+              <input type="text" name="comments" value={formdata.comments} onChange={handleChange} placeholder="add your comment" />
             </lable>
             <button type="submit">submit</button>
           </form>
