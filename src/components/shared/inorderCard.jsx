@@ -22,10 +22,8 @@ export const InorderCard = () => {
     fetchData();
   }, []);
 
-  // Extract IDs from cart items
   const targetIds = cardItem.map(item => item.id);
 
-  // Filter products based on cart items
   const resultId = posts.filter(product => targetIds.includes(product.id));
 
   return (
@@ -43,9 +41,9 @@ export const InorderCard = () => {
         </thead>
         <tbody>
           {resultId.map((item) => {
-            // Find the corresponding count from cardItem
+
             const cartItem = cardItem.find(number => number.id === item.id);
-            const quantity = cartItem ? cartItem.count : 0; // Default to 1 if count is missing
+            const quantity = cartItem ? cartItem.count : 0; 
 
             return (
               <tr key={item.id}>
@@ -54,7 +52,7 @@ export const InorderCard = () => {
                 </td>
                 <td>${(item.price * quantity).toFixed(2)}</td>
                 <td>{item.price}</td>
-                <td><input type="number" placeholder={quantity}/></td>
+                <td><input type="number" placeholder={quantity} style={{width: "80px"}}/></td>
                 <td>{item.title}</td>
                 <td>
                   <img src={item.image} alt={item.title} />

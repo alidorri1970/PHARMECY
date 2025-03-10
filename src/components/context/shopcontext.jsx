@@ -41,11 +41,11 @@ export const ShopContextProvider = (props) => {
 
   function removefromCard(itemId) {
     setCardItem(
-      cardItem.map((i) => {
-        if (i.id === itemId)
-          return { ...i, count: i.count === 0 ? 0 : i.count - 1 };
-        else return i;
-      })
+      cardItem
+        .map((i) => 
+          i.id === itemId ? { ...i, count: i.count - 1 } : i
+        )
+        .filter((i) => i.count > 0) // Remove items with count 0
     );
   }
 
